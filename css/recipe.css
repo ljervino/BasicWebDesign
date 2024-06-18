@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: white;
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 1px 5px grey;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .nav-logo img {
+  width: 15em;
+  height: auto;
+}
+
+nav .nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  border: none;
+  background: none;
+  font-weight: 600;
+  margin-left: 5vw;
+  position: relative;
+}
+
+nav .nav-menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #971414;
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+}
+
+nav .nav-menu a:hover::before {
+  width: 100%;
+}
+
+nav .nav-menu a:hover {
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0;
+  background-color: #5B1A1A;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+
+footer img {
+  width: 200px;
+  height: auto;
+}
+
+footer .top-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+footer .top-section .center a:hover {
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+footer .top-section .left .address {
+  color: white;
+  font-family: poppins;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+footer .top-section .center {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .top-section .center >div {
+  color: white;
+}
+
+footer .top-section .center a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+footer .top-section .right {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  color: white;
+}
+
+.social-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  width: 2em;
+  height: auto;
+  text-decoration: none;
+}
+
+footer .bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+footer .bottom-section .divider {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+footer .bottom-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+footer .bottom-section a:hover {
+  text-decoration: underline;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.highlight {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/fried-ice-cream.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.highlight h1 {
+  position: relative;
+  z-index: 2;
+  color: #5B1A1A;
+  font-size: 2em;
+  text-align: center;
+  padding: 20px;
+}
+
+.food-section {
+  text-align: center;
+  padding: 4em;
+  width: 100%;
+}
+
+.food-section-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.food-item {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin: 1em;
+  width: auto;
+  height: auto;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgb(207, 206, 206);
+}
+
+.food-title {
+  font-weight: 800;
+  text-shadow: 5px;
+  color: #5B1A1A;
+  font-size: 1.5em;
+}
+
+.food-text {
+  color: gray;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.food-item img {
+  width: 20rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s, border-radius 0.5s;
+}
+
+.food-item img:hover {
+  transform: scale(1.03);
+  border-radius: 40%;
+}
+
+
+@media screen and (max-width: 764px){
+  nav {
+    flex-direction: column;
+  }
+
+  nav .nav-logo {
+    justify-content: center;
+  }
+  
+  nav .nav-menu {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav .nav-menu a {
+    margin-left: 0;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0.5em;
+  }
+
+  .body {
+    overflow: hidden;
+  }
+
+
+  footer {
+    font-size: 1em;
+  }
+
+  footer .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .top-section .center {
+    display: none;
+  }
+
+  footer .top-section .left .address {
+    display: none;
+  }
+
+  footer .top-section .left {
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    height: 100vw;
+  }
+
+  .food-section-wrap {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .food-item img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  
+}
+

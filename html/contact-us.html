@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" href="../Assets/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="Assets/Logo.png"> 
+  <link rel="stylesheet" href="../css/contact-us.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-logo">
+      <a href="../html/homepage.html"><img src="../Assets/Logo.png" alt="logo"></a>
+    </div>
+    <div class="nav-menu">
+      <a href="../html/product.html">Products</a>
+      <a href="../html/recipe.html">Recipes</a>
+      <a href="../html/about-us.html">About&nbsp;Us</a>
+      <a href="#">Contact&nbsp;Us</a>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <div class="body">
+    <form action="" id="cu-form" method="get">
+      <div class="contact-us">
+        Contact Us
+      </div>
+      <div class="contact-us-text">Got Any Questions? Feel Free to Ask</div>
+      <br>
+      <div class="name-container">
+        <div class="input-container">
+          <label for="name" class="label">First Name</label>
+          <input type="text" class="input" id="fname" name="fname">
+          <div class="errorMsg" id="errorFname"></div>
+        </div>
+        <div class="input-container">
+          <label for="lname"class="label">Last Name</label>
+          <input type="text" class="input" id="lname" name="lname">
+          <div class="errorMsg" id="errorLname"></div>
+        </div>
+      </div>
+      <div class="input-container">
+        <label for="email" class="label">Email</label>
+        <input type="text" class="input" id="email">
+        <div class="errorMsg" id="errorEmail"></div>
+      </div>          
+      <div class="input-container">
+        <label for="pnumber" class="label">Phone Number</label>
+        <input type="text" class="input" id="pnumber">
+        <div class="errorMsg" id="errorPnumber"></div>
+      </div>
+      <div class="form-message">
+        <label for="textarea" class="label">Message</label>
+        <textarea cols="50" rows="10" class="input" id="textarea" name="textarea"></textarea>
+        <div class="errorMsg" id="errorMessage"></div>
+      </div>        
+      <div class="row">
+        <button type="button" id="btnSubmit">Send</button>        
+      </div>
+    </form>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="top-section">
+      <div class="left">
+        <img src="../Assets/Logo.png" alt="logo">
+        <div class="address">
+          <p>21 Bee Street</p>
+          <p>11530 Battle Creek, Michigan</p>
+          <p>United States</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <div>Who We Are</div>
+        <a href="#">About Us</a>
+      </div>
+
+      <div class="center">
+        <div>Our Foods</div>
+        <a href="#">Products</a>
+        <a href="#">Recipes</a>
+      </div>
+
+      <div class="right">
+        <div>Connect With Us</div>
+        <div class="social-container">
+          <a href="#"><img src="../Assets/facebook.svg" alt="" class="social"></a>
+          <a href="#"><img src="../Assets/instagram.svg" alt="" class="social"></a>
+          <a href="#"><img src="../Assets/twitter-x.svg" alt="" class="social"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <a href="#">Contact Us</a>
+      <div class="divider">&nbsp;|&nbsp;</div>
+      <a href="">Privacy Policy</a>
+      <div class="divider">&nbsp;|&nbsp;</div>
+      <a href="">Terms of Use</a>
+      <div class="divider">&nbsp;|&nbsp;</div>
+      <a href="">&copy; Copyright VKelloggs 2024</a>
+    </div>
+  </footer>
+
+  <script src="../js/contact-us.js"></script>
+</body>
+</html>
